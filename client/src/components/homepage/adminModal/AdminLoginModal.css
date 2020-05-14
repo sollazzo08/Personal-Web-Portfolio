@@ -1,0 +1,14 @@
+/*
+.form-section {
+ 
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+*/
+
+.modal-backdrop {
+  height: 0vh;
+}

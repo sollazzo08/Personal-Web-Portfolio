@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.navbar-toggler {
+  background: 1px solid #98B6B1;
+}
+
+.navbar-brand > a{
+  color: #989898
+}

@@ -1,0 +1,12 @@
+.custom-container {
+  height: 200px;
+}
+.dashLinks{
+  color: white;
+
+  font-size: 25px;
+}
+
+.dashLinks:hover {
+  color: #98B6B1;
+}

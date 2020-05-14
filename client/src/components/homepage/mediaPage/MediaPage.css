@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  background-color: #98B6B1;
+}
+
+.media-body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.desc {
+  color: #08090A;
+  font-size: 20px;
+}
+
+.img-shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0%  { transform: translate(5px, 2px) rotate(-1deg); }
+  10% { transform: translate(5px, 2px) rotate(0deg); }
+  20% { transform: translate(5px, 2px) rotate(1deg); }
+  30% { transform: translate(5px, 2px) rotate(-1deg); }
+  40% { transform: translate(5px, 2px) rotate(0deg); }
+  50% { transform: translate(5px, 2px) rotate(-1deg); }
+  50% { transform: translate(5px, 2px) rotate(1deg); }
+  70% { transform: translate(5px, 2px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+@media (max-width: 701px) {
+  
+  .d-flex {
+    flex-direction: column;
+  }
+
+
+}
