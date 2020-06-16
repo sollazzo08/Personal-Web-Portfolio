@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
+  Route, 
 } from 'react-router-dom';
 import HomePageWrapper from './components/homepage/homePageWrapper';
 import MoviePage from './components/moviePage/moviePageWrapper';
