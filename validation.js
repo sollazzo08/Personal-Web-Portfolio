@@ -16,7 +16,7 @@ const registerValidation = (data) => {
                 no more than 8 characters
                 one uppercase letter
                 one lowercase letter
-                one numeric digiy
+                one numeric digit
             */
             .regex(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,12}$/)
             .required()  

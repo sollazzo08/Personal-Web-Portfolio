@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+h3 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.posters {
+box-shadow: 0 10px 30px -5px black;
+border-radius: 1em;
+
+}
+
+.test {
+  text-align: center;
+}
+.meta-text {
+  width: 410px;
+  margin: 0 auto;
+  font-size: 22px;
+  font-family: 'Orbitron', sans-serif;
+}

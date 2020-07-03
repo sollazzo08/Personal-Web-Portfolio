@@ -1,0 +1,10 @@
+Goal for today
+ - Make my favorite movies display in a grid style format 
+ - How to render each movie dynamicly 
+   - Store my object of movie informaiton into an array in state
+
+Movie Page
+ - I only want to show 9 movies per page 
+    - I can only loop through 9 in the map array 
+    
+

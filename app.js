@@ -13,6 +13,7 @@ var usersRouter = require('./routes/users');
 var userInfoRouter = require('./routes/userInfo');
 var imagesRouter = require('./routes/images');
 var awsCtrl = require("./awsCtrl");
+var movieRouter = require("./routes/movie");
 var cors = require('cors');
 var app = express(); //so we can use express
 
@@ -50,6 +51,7 @@ app.use('/user',usersRouter);
 app.use('/sign_s3', awsCtrl);
 app.use('/image', imagesRouter);
 app.use('/userInfo', userInfoRouter);
+app.use('/movie', movieRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
