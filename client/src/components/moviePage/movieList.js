@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import NavBar from '../homepage/navbar/Navbar';
 import './moiveList.css';
-import Pagination from '@material-ui/lab/Pagination';
-import {Container, Grid} from '@material-ui/core/';
+import Pagination from '../moviePage/pagination';
 
 class MovieList extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      favMovies: []
+      favMovies: [],
+      totalMovies: null,
+      totalPages: null
     };
    
   }
-
 
   getMovieInfo = () => {
     axios.get(
@@ -22,8 +22,13 @@ class MovieList extends React.Component {
       )
       .then((response) => {
         var favMovieList = response.data.results;
+        var totalMovies = response.data.total_results;
+        var totalPages = response.data.total_pages;
           if (response) {
-            this.setState({ favMovies: favMovieList}); 
+            this.setState(
+              { favMovies: favMovieList,
+                totalMovies: totalMovies,
+                totalPages: totalPages}); 
           }
       });
   }
@@ -33,14 +38,17 @@ class MovieList extends React.Component {
   }
 
   render() {
-       
+    console.log(this.state.totalPages);
+    console.log(this.state.totalMovies);
+    
+    
     const favMovies = this.state.favMovies;
  
     const movie = favMovies.map((info, index) => (
-      index <= 8 && 
+      // index <= 8 && 
       <div className='col-md-4' key={info.id}>
         <h3>{info.title}</h3>
-          <img className='posters' src={`https://image.tmdb.org/t/p/w400${info.poster_path}`} />
+          <img className='posters' src={`https://image.tmdb.org/t/p/w300${info.poster_path}`} />
             <div className='row meta-text pt-2'>
               <div className='col-sm-6 px-0'>
                 <p> Rating: {Math.trunc(info.popularity)}</p>
@@ -62,14 +70,7 @@ class MovieList extends React.Component {
               {movie}
           </div>
         </div>
-      <Grid container
-            spacing={0}
-            direction="column"
-            alignItems="center"
-            justify="center"
-      >       
-      <Pagination color="white" background="red"/>
-      </Grid>
+        <Pagination totalMovies={this.state.totalMovies} totalPages={this.state.totalPages}/>
       </div>
     );
   }

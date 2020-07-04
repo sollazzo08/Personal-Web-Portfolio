@@ -8,3 +8,7 @@ Movie Page
     - I can only loop through 9 in the map array 
     
 
+Create Pagination component 
+   -we need total number of movies
+   -we need the total number of movies per page (9)
+   -we nee to handle the click 
