@@ -32,7 +32,7 @@ class AdminLoginModal extends React.Component {
    http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/user/login
   */
     axios
-      .post('http://localhost:9000/user/login', user)
+      .post('http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/user/login', user)
       .then((res) => {
         if (res.status === 200) this.props.history.push('/admin');
         //console.log(res.data)

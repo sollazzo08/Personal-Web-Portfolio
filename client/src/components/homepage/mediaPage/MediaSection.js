@@ -24,7 +24,7 @@ class MediaSection extends React.Component {
    http://localhost:9000/image
    http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/image
 */
-    fetch('http://localhost:9000/image'   
+    fetch('http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/image'   
     )      //Fetch most recently added image from database
       .then((res) => res.json())
       .then((data) => {
@@ -39,7 +39,7 @@ class MediaSection extends React.Component {
    http://localhost:9000/userInfo
    http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/userInfo
 */  
-      axios.get('http://localhost:9000/userInfo', {
+      axios.get('http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/userInfo', {
      
       })
       .then(response => {
