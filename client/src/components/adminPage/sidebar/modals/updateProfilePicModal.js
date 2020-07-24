@@ -38,7 +38,7 @@ class Modal2 extends React.Component{
     http://localhost:9000/sign_s3
     http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/sign_s3
   */
-  axios.post("http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/sign_s3",{
+  axios.post("http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9001/sign_s3",{
     fileName : fileName,
     fileType : fileType
   })
@@ -58,7 +58,7 @@ class Modal2 extends React.Component{
       http://localhost:9000/image
       http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/image
     */
-    axios.post("http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/image", {                      
+    axios.post("http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9001/image", {                      
       url : url
     }).then(() => console.log("Sent url to db"))
       .catch((err) => console.log(err));

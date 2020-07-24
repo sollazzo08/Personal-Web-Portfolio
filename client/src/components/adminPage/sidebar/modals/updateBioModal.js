@@ -30,7 +30,7 @@ class Modal1 extends React.Component{
     http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/user/login
     http://localhost:9000/userInfo/
     */
-    axios.post('http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9000/userInfo',(userInfo))
+    axios.post('http://ec2-3-17-26-49.us-east-2.compute.amazonaws.com:9001/userInfo',(userInfo))
       .then((res) => {
         if(res.status === 200)
           this.props.history.push('/admin');
