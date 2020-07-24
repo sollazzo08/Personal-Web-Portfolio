@@ -1,0 +1,40 @@
+Stocks section 
+ -Were going to list my favorite stocks and informaiton about them 
+ -Stock information 
+    -price(current, closing and opening)
+    -ticker symbol 
+    -graph informtion 
+    - company stock logo
+ Pie chart for my favorite stocks 
+
+ API KEY = 4HS015QYWEHYZ7NM   
+
+ STOCK list
+ -alphabetical
+ -search bar
+ -display 10 stocks 
+
+
+
+ JULY 7th Tonights Stream ✓
+
+LEARN HOOKS
+  - tryout useState hook ✓
+  - fetch some data with useEffect hook  ✓
+  - create a custom react hook ✓ 
+  - use async/await in our hook ✓
+   -use same hook with XML and fetch 
+
+FAVORITE STOCKS PROJECT 
+ - render a list of favorite stocks
+ - look into implementing a chandle stick chart 
+ - search bar for stock list
+   - search alphabetically 
+   - render stocks by first few letters
+- show informaiton about each stock when clicked
+     -e.g. display candle stick chart 
+
+
+
+ 
+

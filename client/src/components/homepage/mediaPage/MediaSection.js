@@ -1,8 +1,8 @@
 import React from 'react';
 import './MediaPage.css';
-import actionFilmImg from '../../../img/actionFilm.png'
-import musicImg from '../../../img/musicImg.png'
-import stockImg from '../../../img/stockImg.png'
+import actionFilmImg from '../../../img/actionFilm.png';
+import musicImg from '../../../img/musicImg.png';
+import stockImg from '../../../img/stockImg.png';
 import TypeIt from 'typeit-react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
@@ -87,9 +87,17 @@ class MediaSection extends React.Component {
               </Link>
             </div>
           </div>
-        </div>
-        {/** 
-         * 
+        </div>              
+        <div className="col-lg-4">
+          <h3 className="text-light text-center">Stocks</h3>
+          <div className="card border-0">
+            <div className="card-img bg-dark text-center">
+              <Link to={{pathname: 'stockList' }} >
+              <img className="mx-auto bg-dark img-shake" src={stockImg} height="250" alt=""/>  
+              </Link>
+            </div>
+          </div>
+        </div>      
         <div className="col-lg-4">
           <h3 className="text-light text-center">Music</h3>
           <div className="card border-0">
@@ -98,15 +106,6 @@ class MediaSection extends React.Component {
             </div>
           </div>
         </div>
-        <div className="col-lg-4">
-          <h3 className="text-light text-center">Stocks</h3>
-          <div className="card border-0">
-            <div className="card-img bg-dark text-center">
-              <img className="mx-auto bg-dark img-shake" src={stockImg} height="250" alt=""/>  
-            </div>
-          </div>
-        </div>
-        */}
       </div>
     </div>
     
